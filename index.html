@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>FLOWER CLASSIFIER APP</title>
+<style>
+ input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px 4px 80px;
+  cursor: pointer;
+}
+input[type=file]{
+background-color: #8a8a5c;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.jumbotron img{margin: 4px 2px 8px 350px;}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #fc7419;
+   color: white;
+   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+.jumbotron img{margin: 4px 2px 8px 70px;}
+h2 {margin:4px 2px 8px 70px; }
+ input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px 8px 150px;
+  cursor: pointer;
+}
+input[type=file]{
+background-color: #8a8a5c;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  margin: 4px 2px 8px 70px;;
+  cursor: pointer;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+	<div id="1">
+    <img src="/static/1.jpg" height="300px">
+	</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+      <h2>Upload the image</h2>
+	<form method="POST" enctype=multipart/form-data>
+		<input type="file" name="file">
+		<input type="submit" value="upload">
+	</form>
+    </div>
+
+  </div>
+</div>
+<div class="footer">
+  <p>MADE BY SOURAV KUMAR @souravdlboy </p>
+</div>
+
+</body>
+</html>
