@@ -32,3 +32,4 @@ optional arguments:
   -v  :  debug output to print all items detected    
   
 # Sample runs with outputs
+![output1](/img/output/output1.JPG)
