@@ -1,8 +1,12 @@
 # Object-Detection-MobileNet-cv
 This repo contains script for detecting multiple objects in the given image and return bounding boxes for a given query string.
 
-# Project : 
-The following Python script uses MobileNet + SSD for object detection in a given image as it is one of the light weight balanced models with optimum accuracy.
+# Project Objective: 
+Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image.    
+
+# Approach :   
+The following Python script uses MobileNet + SSD for object detection in a given image as it is one of the light weight balanced models with optimum accuracy.   
+* More approach
 
 # Getting started :
 * We need to install latest version of Opencv.     
