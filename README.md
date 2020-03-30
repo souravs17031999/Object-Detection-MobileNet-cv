@@ -6,7 +6,7 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 
 # Approach :   
 The following Python script uses MobileNet + SSD for object detection in a given image as it is one of the light weight balanced models with optimum accuracy.   
-* More approach
+* More approach[TODO!]
 
 # Getting started :
 * We need to install latest version of Opencv.     
@@ -41,5 +41,5 @@ optional arguments:
 ![output3](/img/output/output3.JPG)
 
 # Front-end and Web server
-* The pages ```index.html``` and ```result.html``` is just skeleton form of the actual page , just for showcasing the look.
-It is in active developement and a web server based on Flask will be added soon.
+* The pages ```index.html``` and ```result.html``` is just skeleton form of the actual page , just for showcasing the look.    
+It is in active developement and a web server based on Flask will be added soon[TODO!]
