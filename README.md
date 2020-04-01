@@ -4,8 +4,9 @@
 Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image.    
 
 # Approach :   
-The following Python script uses MobileNet + SSD for object detection in a given image as it is one of the light weight balanced models with optimum accuracy.   
-* More approach[TODO!]
+* Pre-trained ```MobileNet + SSD``` with ```Flask``` server.   
+* [Pre-trained ```Resnet-152``` with ```GUI Tkinter```](https://github.com/souravs17031999/Retinal_blindness_detection_Pytorch).
+* Object detection in the browser using ```tensorflow.js```
 
 # Getting started :
 * We need to install latest version of Opencv.     
