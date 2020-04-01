@@ -1,5 +1,4 @@
 # Object-Detection-MobileNet-cv
-This repo contains script for detecting multiple objects in the given image and return bounding boxes for a given query string.
 
 # Project Objective: 
 Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image.    
