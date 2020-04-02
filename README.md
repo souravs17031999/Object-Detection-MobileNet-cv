@@ -9,7 +9,9 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 * [Pre-trained ```Resnet-152``` with ```GUI Tkinter```](https://github.com/souravs17031999/Retinal_blindness_detection_Pytorch).
 * Object detection in the browser using ```tensorflow.js```
 
-# Getting started :
+# Getting started :     
+
+### CMD (terminal) solution :    
 * We need to install latest version of Opencv.     
 [Download here](https://pypi.org/project/opencv-python/)   
 * Run the cmd (terminal).    
@@ -41,6 +43,4 @@ optional arguments:
 ![output2](/img/output/output2.JPG)
 ![output3](/img/output/output3.JPG)
 
-# Front-end and Web server
-* The pages ```index.html``` and ```result.html``` is just skeleton form of the actual page , just for showcasing the look.    
-It is in active developement and a web server based on Flask will be added soon[TODO!]
+### Flask server :     
