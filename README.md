@@ -7,7 +7,7 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 * Pre-trained ```MobileNet + SSD``` run from command line (terminal).
 * Pre-trained ```MobileNet + SSD``` with ```Flask``` server.   
 > Brief introduction       
-![conv1](/img/conv1.PNG)      
+![conv1](/img/conv1.png)      
 * MobileNet uses Depthwise Separable Convolution which consists of two steps - Depthwise convolution and then Pointwise convolution.   
 * Depthwise convolution channel wise spatial convolution.   
 * Pointwise convolution uses Network-In-Network architechture (NiN) which is bsically doing 1 x 1 convolutions along with other conv layers. This helps in reducing parameters to a large extent.     
