@@ -19,7 +19,6 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 * Download the project files using following command in the directory from where you need to run the script :   
 ```
 git clone https://github.com/souravs17031999/Object-Detection-MobileNet-cv   
-
 ```   
 * Run the command using the following parameters as shown : 
 ```
