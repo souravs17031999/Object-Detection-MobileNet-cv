@@ -5,14 +5,20 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 
 # Approach :   
 * Pre-trained ```MobileNet + SSD``` run from command line (terminal).
-* Pre-trained ```MobileNet + SSD``` with ```Flask``` server.   
+* Pre-trained ```MobileNet + SSD``` with ```Flask``` server.     
+
 > Brief introduction       
 ![conv1](/img/conv1.png)      
 * MobileNet uses Depthwise Separable Convolution which consists of two steps - Depthwise convolution and then Pointwise convolution.   
 * Depthwise convolution channel wise spatial convolution.   
 * Pointwise convolution uses Network-In-Network architechture (NiN) which is bsically doing 1 x 1 convolutions along with other conv layers. This helps in reducing parameters to a large extent.     
 
-* [Pre-trained ```Resnet-152``` with ```GUI Tkinter```](https://github.com/souravs17031999/Retinal_blindness_detection_Pytorch).
+* [Pre-trained ```Resnet-152``` with ```GUI Tkinter```](https://github.com/souravs17031999/Retinal_blindness_detection_Pytorch).     
+
+> Brief introduction            
+![conv1](/img/conv2.gif)         
+* Resnet-152 uses residual connections, The core idea exploited in these models, residual connections, is found to greatly improve gradient flow, thus allowing training of much deeper models with tens or even hundreds of layers.       
+
 * Object detection in the browser using ```tensorflow.js```
 
 
