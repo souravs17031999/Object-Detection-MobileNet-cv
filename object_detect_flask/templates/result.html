@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>Object Detection App</title></head>
-<style>
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #fc7419;
-   color: white;
-   text-align: center;
-}
-@media only screen and (max-width: 768px) {
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Object Detection App</title></head>
+  <style>
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #fc7419;
+       color: white;
+       text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
 
-h2 {margin:4px 2px 8px 70px; }
+    h2 {margin:4px 2px 8px 70px; }
 
-}
-</style>
+    }
+  </style>
 <body background="/static/1.jpg">
-<div class="container">
-    <br><br><br><br>
+  <div class="container">
+      <br><br><br><br>
   <div class="row">
-
-	<h2>Detected object(s) with Bounding box</h2>
-	<img src="{{url_for('static', filename=image_name)}}">
-    </div>
+  	<h2>Detected object(s) with Bounding box</h2>
+  	<img src="{{url_for('static', filename=image_name)}}">
   </div>
-</div>
+  </div>
+
 <div class="footer">
   <p>MADE BY SOURAV KUMAR</p>
 </div>
