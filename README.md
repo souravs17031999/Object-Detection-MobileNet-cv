@@ -23,7 +23,9 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 
 
 # Getting started :     
-
+### Real time Flask server hosted :      
+* Log on to following URL hosted on pythonanywhere.com using flask server :    
+[object_detect_cv](https://souravsdlboy.pythonanywhere.com/)    
 ### CMD (terminal) solution :    
 * We need to install latest version of Opencv.     
 [Download here](https://pypi.org/project/opencv-python/)   
@@ -51,8 +53,10 @@ optional arguments:
   -v  :  debug output to print all items detected    
   
 # Sample runs with outputs
-![output1](/img/output/output1.JPG)
-![output2](/img/output/output2.JPG)
-![output3](/img/output/output3.JPG)
+![flask1](/img/flask1.JPG)   
+![flask2](/img/flask2.JPG)    
+![output1](/img/output/output1.JPG)    
+![output2](/img/output/output2.JPG)   
+![output3](/img/output/output3.JPG)   
 
 ### Flask server :     
