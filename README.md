@@ -58,5 +58,3 @@ optional arguments:
 ![output1](/img/output/output1.JPG)    
 ![output2](/img/output/output2.JPG)   
 ![output3](/img/output/output3.JPG)   
-
-### Flask server :     
