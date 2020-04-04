@@ -54,7 +54,7 @@ optional arguments:
   
 # Sample runs with outputs
 ![flask1](/img/flask1.JPG)   
-![flask2](/img/flask2.JPG)    
+![flask3](/img/flask3.JPG)    
 ![output1](/img/output/output1.JPG)    
 ![output2](/img/output/output2.JPG)   
 ![output3](/img/output/output3.JPG)   
