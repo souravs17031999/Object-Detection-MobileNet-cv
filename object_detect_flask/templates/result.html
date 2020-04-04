@@ -24,18 +24,81 @@
        color: white;
        text-align: center;
     }
+    h2 {text-align: center;}
+    img{
+    display: inline-block;}
+    table{
+      display: inline-block;
+    }
+    .image-container{
+      text-align: center;
+    }
+    .table-container{
+      text-align: center;
+    }
+
+    th:tr{
+        color: blue;
+
+    }
+    tr:nth-of-type(2n){
+        border: 1px solid black;
+        background-color: rgba(150, 150, 150, 0.5);
+
+    }
+
+    td{
+        padding: 8px 8px;
+        border: 1px solid black;
+    }
     @media only screen and (max-width: 768px) {
 
-    h2 {margin:4px 2px 8px 70px; }
+    h2 {text-align: center;}
 
     }
   </style>
 <body background="/static/1.jpg">
   <div class="container">
-      <br><br><br><br>
+      <br>
+      <h2>Detected object(s) with Bounding box : Total {{ len }}</h2>
+      <br>
+      <div class="row">
+        <div class = "table-container">
+          <table style="margin-left: 20px;">
+          <!-- Table headers -->
+              <th>
+                  <tr style="color: green; ">
+                    <td>Serial Number</td>
+                    <td>startX</td>
+                    <td>startY</td>
+                    <td>endX</td>
+                    <td>endY</td>
+                  </tr>
+              </th>
+
+              <!-- For loop logic of jinja template -->
+              {%for i in range(0, len)%}
+
+              <!-- table rows -->
+              <tr>
+                <td>{{i}}</td>
+                <td>{{detected_items[i][0]}}</td>
+                <td>{{detected_items[i][1]}}</td>
+                <td>{{detected_items[i][2]}}</td>
+                <td>{{detected_items[i][3]}}</td>
+                {%endfor%}
+
+              </tr>
+
+          </table>
+      </div>
+      </div>
+      <br><br>
   <div class="row">
-  	<h2>Detected object(s) with Bounding box</h2>
-  	<img src="{{url_for('static', filename=image_name)}}">
+
+    <div class = "image-container">
+  	   <img src="{{url_for('static', filename=image_name)}}">
+    </div>
   </div>
   </div>
 

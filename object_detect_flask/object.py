@@ -49,6 +49,6 @@ def hello_world():
 		m = MobileNetSSD(npimg, prototxt, model, 0.5, query, True)
 		result_flag = m.main()  # this flag tells whether we detected given object in the image or not
 		if result_flag[0]:
-			return render_template('result.html', image_name=result_flag[1])
+			return render_template('result.html', image_name=result_flag[1], detected_items=result_flag[2], len = len(result_flag[2]))
 		else:
 			return render_template('error.html', message='NOT_FOUND_ERROR : Given Object not found in the Provided Image')

@@ -33,7 +33,7 @@ class MobileNetSSD:
         # since image is colored , so all RGB colors assigned
 		COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
         # loading model
-		print("loading model...")
+		# print("loading model...")
 		net = cv2.dnn.readNetFromCaffe(self.prototxt, self.model)
         # read image
 
@@ -44,11 +44,11 @@ class MobileNetSSD:
 		blob = cv2.dnn.blobFromImage(cv2.resize(image, (300, 300)), 0.007843, (300, 300), 127.5)
 
         # pass the blob through the network and obtain the detections and
-		print("Passing the image to the model...")
+		# print("Passing the image to the model...")
 		net.setInput(blob)
 		detections = net.forward()
 		detected = 0
-		detected_items = set()
+		detected_items = []
         # now constructing bounding boxes for every object detected
 		for i in range(0, detections.shape[2]):
             # for every image detected extract the confidence
@@ -57,12 +57,14 @@ class MobileNetSSD:
 			if confidence > float(self.confidence):
                 # extracting the index of the label
 				idx = int(detections[0, 0, i, 1])
-				detected_items.add(CLASSES[idx])
 				if self.query == CLASSES[idx]:
                     # extracting the four offset values for bounding boxes
 					box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
                     # setting the four core coordinates to draw the rectangle
 					(startX, startY, endX, endY) = box.astype("int")
+					# adding coordinates of bounding boxes
+					detected_items.append((startX, startY, endX, endY))
+					# setting labels for detected images
 					label = f"{CLASSES[idx]} : {confidence*100}"
                     # increment every time it is detected
 					detected += 1
@@ -76,13 +78,13 @@ class MobileNetSSD:
 		full_path = target + random_generate
 
 		if not detected:
-			print(f"NO {self.query} detected in the given image !")
+			# print(f"NO {self.query} detected in the given image !")
 			return 0, full_path
 		else:
-			print(f"{self.query} detected {detected} !")
+			# print(f"{self.query} detected {detected} !")
 			cv2.imwrite(full_path,image)
-			print(f"File saved as {full_path}")
-			return 1, random_generate
+			# print(f"File saved as {full_path}")
+			return 1, random_generate, detected_items
         # # cv2.imshow("Output", image)
         # # cv2.waitKey(0)
         # if self.verbose:
