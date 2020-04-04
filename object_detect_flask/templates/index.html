@@ -57,22 +57,21 @@
 
     .new{animation-name:myanime;
     	width:auto;
-    	height:50px;
+    	height:auto;
     	animation-duration:4s;
     	animation-iteration-count:infinite;
     }
 
     @media only screen and (max-width: 768px) {
-
-    h2 {margin:4px 2px 8px 70px; }
+    h2 {text-align: center;}
      input[type=submit]{
       background-color: #4CAF50;
       border: none;
       color: white;
       padding: 16px 32px;
       text-decoration: none;
-      margin: 4px 2px 8px 150px;
       cursor: pointer;
+      margin: 0 auto
     }
     input[type=file]{
     background-color: #8a8a5c;
@@ -80,8 +79,20 @@
       color: white;
       padding: 8px 8px;
       text-decoration: none;
-      margin: 4px 2px 8px 70px;;
       cursor: pointer;
+      display: inline-block;
+    }
+    .upload{
+      text-align: center;
+    }
+    .submit{
+      text-align: center;
+    }
+    .drop-down{
+      text-align: center;
+    }
+    label{
+      margin: 0 auto
     }
     }
   </style>
@@ -94,14 +105,18 @@
         <h1>WELCOME TO OBJECT DETECTION  - DETECTCV</h1>
       </div>
     </div>
-    <br><br><br><br>
+    <br><br><br>
     <div class="row">
       <div class="col-sm-4">
       </div>
     <div class="col-sm-4">
       <h2>Upload the image</h2>
   	<form method="POST" enctype=multipart/form-data>
-  		<input type="file" name="file">
+      <div class = "upload">
+  		  <input type="file" name="file">
+      </div>
+      <br>
+      <div class = "drop-down">
       <label for="object">Choose a Object:</label>
         <select id="object" name="object">
           <option value="background">background</option>
@@ -126,7 +141,11 @@
           <option value="train">train</option>
           <option value="tvmonitor">tvmonitor</option>
         </select>
-  		<input type="submit" value="upload">
+      </div>
+        <br>
+      <div class = "submit">
+  		  <input type="submit" value="upload">
+      </div>
   	</form>
     </div>
   </div>
