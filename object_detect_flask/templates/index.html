@@ -9,8 +9,13 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>FLOWER CLASSIFIER APP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<title>Object Detection App</title>
 <style>
+h1{font-family: 'IBM Plex Mono', monospace;
+text-align: center;}
  input[type=submit]{
   background-color: #4CAF50;
   border: none;
@@ -29,7 +34,6 @@ background-color: #8a8a5c;
   margin: 4px 2px;
   cursor: pointer;
 }
-.jumbotron img{margin: 4px 2px 8px 350px;}
 
 .footer {
    position: fixed;
@@ -41,9 +45,22 @@ background-color: #8a8a5c;
    text-align: center;
 }
 
+@keyframes myanime{
+	 0%	{background-color: #68ed83;}
+    25%  {background-color: #cdf59d;}
+    50%  {background-color: #e8ed4e;}
+    100% {background-color: #affae8;}
+}
+
+.new{animation-name:myanime;
+	width:auto;
+	height:50px;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+}
+
 @media only screen and (max-width: 768px) {
 
-.jumbotron img{margin: 4px 2px 8px 70px;}
 h2 {margin:4px 2px 8px 70px; }
  input[type=submit]{
   background-color: #4CAF50;
@@ -66,13 +83,16 @@ background-color: #8a8a5c;
 }
 </style>
 </head>
-<body>
+<body background="/static/1.jpg">
 <div class="container">
-  <div class="jumbotron">
-	<div id="1">
-    <img src="/static/1.jpg" height="300px">
-	</div>
-  </div>
+    <br><br><br><br>
+    <div class = "row">
+        <div class = "new">
+        <h1>WELCOME TO OBJECT DETECTION  - DETECTCV</h1>
+        </div>
+    </div>
+
+    <br><br><br><br>
   <div class="row">
     <div class="col-sm-4">
 
@@ -81,6 +101,7 @@ background-color: #8a8a5c;
       <h2>Upload the image</h2>
 	<form method="POST" enctype=multipart/form-data>
 		<input type="file" name="file">
+    <input name="text" placeholder = "Enter the object to detect">
 		<input type="submit" value="upload">
 	</form>
     </div>
@@ -88,7 +109,7 @@ background-color: #8a8a5c;
   </div>
 </div>
 <div class="footer">
-  <p>MADE BY SOURAV KUMAR @souravdlboy </p>
+  <p>MADE BY SOURAV KUMAR</p>
 </div>
 
 </body>
