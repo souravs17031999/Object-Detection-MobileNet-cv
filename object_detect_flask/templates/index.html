@@ -99,7 +99,30 @@
       <h2>Upload the image</h2>
   	<form method="POST" enctype=multipart/form-data>
   		<input type="file" name="file">
-      <input name="text" placeholder = "Enter the object to detect">
+      <label for="object">Choose a Object:</label>
+        <select id="object" name="object">
+          <option value="background">background</option>
+          <option value="aeroplane">aeroplane</option>
+          <option value="bicycle">bicycle</option>
+          <option value="bird">bird</option>
+          <option value="boat">boat</option>
+          <option value="bottle">bottle</option>
+          <option value="bus">bus</option>
+          <option value="car">car</option>
+          <option value="cat">cat</option>
+          <option value="chair">chair</option>
+          <option value="cow">cow</option>
+          <option value="diningtable">diningtable</option>
+          <option value="dog">dog</option>
+          <option value="horse">horse</option>
+          <option value="motorbike">motorbike</option>
+          <option value="person">person</option>
+          <option value="pottedplant">pottedplant</option>
+          <option value="sheep">sheep</option>
+          <option value="sofa">sofa</option>
+          <option value="train">train</option>
+          <option value="tvmonitor">tvmonitor</option>
+        </select>
   		<input type="submit" value="upload">
   	</form>
     </div>

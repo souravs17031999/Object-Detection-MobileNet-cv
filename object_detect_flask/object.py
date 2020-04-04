@@ -34,7 +34,7 @@ def hello_world():
 		image = file.read()
 		npimg = np.fromstring(image, np.uint8)
 		# converting all queries from text box to lower case as we have defined all classes to be in lower case
-		query = request.form['text'].lower()
+		query = request.form['object'].lower()
 		# check if nothing is provided in text box
 		if not query:
 			return render_template('error.html', message='EMPTY_STRING_ERROR : Query string is empty, please enter something !')
@@ -47,7 +47,7 @@ def hello_world():
 		# this is the caffemodel containing weights of the pre trained model
 		model = APP_ROOT + '/model.caffemodel'
 		m = MobileNetSSD(npimg, prototxt, model, 0.5, query, True)
-		result_flag = m.main()  # this flag tells whether we detected given object in the image or not 
+		result_flag = m.main()  # this flag tells whether we detected given object in the image or not
 		if result_flag[0]:
 			return render_template('result.html', image_name=result_flag[1])
 		else:
