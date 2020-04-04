@@ -53,8 +53,10 @@ optional arguments:
   -v  :  debug output to print all items detected    
   
 # Sample runs with outputs
-![output1](/img/output/output1.JPG)
-![output2](/img/output/output2.JPG)
-![output3](/img/output/output3.JPG)
+![flask1](/img/flask1.JPG)   
+![flask2](/img/flask2.JPG)    
+![output1](/img/output/output1.JPG)    
+![output2](/img/output/output2.JPG)   
+![output3](/img/output/output3.JPG)   
 
 ### Flask server :     
