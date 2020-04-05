@@ -19,7 +19,7 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 ![conv1](/img/conv2.gif)         
 * Resnet-152 uses residual connections, The core idea exploited in these models, residual connections, is found to greatly improve gradient flow, thus allowing training of much deeper models with tens or even hundreds of layers.       
 
-* Object detection in the browser using ```tensorflow.js```
+* Object detection in the browser using ```tensorflow.js``` [TODO - Currently in progress]  
 
 
 # Getting started :     
