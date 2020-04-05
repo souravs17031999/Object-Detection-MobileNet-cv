@@ -35,7 +35,7 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 ```
 git clone https://github.com/souravs17031999/Object-Detection-MobileNet-cv   
 ```     
-* Change directory to ```object_detect_flask```.    
+* Change directory to ```object_detect_cmd```.    
 * Run the command using the following parameters as shown : 
 ```
 python object_detection.py <image> <prototxt> <model> <confidence> <query>
