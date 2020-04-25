@@ -29,7 +29,11 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 
 # Getting started :     
 ### FLASK solution : 
-* Run the cmd (terminal). 
+* Run the cmd (terminal).     
+* Download the project files using following command in the directory from where you need to run the script :       
+```  
+git clone https://github.com/souravs17031999/Object-Detection-MobileNet-cv    
+```      
 * Move to the project main directory where the project is downloaded.
 * Move to directory ```object_detect_flask```.  
 * Now run following :     
