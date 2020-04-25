@@ -36,10 +36,12 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 (for windows)     
 > set FLASK_APP=object.py    
 
-> python -m flask run     
-(for other termials)        
-> $ export FLASK_APP=hello.py    
-$ flask run    
+> python -m flask run       
+
+(for other termials)          
+
+> $ export FLASK_APP=object.py      
+> $ flask run       
 
 [Other troubleshooting issues related to flask server](https://flask.palletsprojects.com/en/1.1.x/quickstart/#what-to-do-if-the-server-does-not-start)    
 
