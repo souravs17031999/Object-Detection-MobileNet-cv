@@ -35,7 +35,6 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 * Now run following :     
 (for windows)     
 > set FLASK_APP=object.py    
-
 > python -m flask run       
 
 (for other termials)          
