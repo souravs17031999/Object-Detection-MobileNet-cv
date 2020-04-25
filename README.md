@@ -22,10 +22,21 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 * Object detection in the browser using ```tensorflow.js``` [TODO - Currently in progress]  
 
 
-# Getting started :     
 ### Real time Flask server hosted :      
 * Log on to following URL hosted on pythonanywhere.com using flask server :    
+
 ### [LIVE WEBSITE](https://souravsdlboy.pythonanywhere.com/object)    
+
+# Getting started :     
+### FLASK solution : 
+* Run the cmd (terminal). 
+* Move to the project main directory where the project is downloaded.
+* Move to directory ```object_detect_flask```.  
+* Now run following : 
+> set FLASK_APP=object.py
+> python -m flask run
+* Now the local server should start, log on to : [local url port] shown on terminal.  
+
 ### CMD (terminal) solution :    
 * We need to install latest version of Opencv.     
 [Download here](https://pypi.org/project/opencv-python/)   
