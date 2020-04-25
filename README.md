@@ -32,10 +32,19 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 * Run the cmd (terminal). 
 * Move to the project main directory where the project is downloaded.
 * Move to directory ```object_detect_flask```.  
-* Now run following : 
-> set FLASK_APP=object.py
+* Now run following :     
+(for windows)     
+> set FLASK_APP=object.py    
+
 > python -m flask run
-* Now the local server should start, log on to : [local url port] shown on terminal.  
+(for other termials)    
+> $ export FLASK_APP=hello.py    
+$ flask run    
+
+[Other troubleshooting issues related to flask server](https://flask.palletsprojects.com/en/1.1.x/quickstart/#what-to-do-if-the-server-does-not-start)    
+
+* Now the local server should start, log on to : [local url port] shown on terminal.     
+(Most probably it will be http://127.0.0.1:5000/ , or maybe any other port)   
 
 ### CMD (terminal) solution :    
 * We need to install latest version of Opencv.     
