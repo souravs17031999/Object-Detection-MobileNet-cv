@@ -36,8 +36,8 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 (for windows)     
 > set FLASK_APP=object.py    
 
-> python -m flask run
-(for other termials)    
+> python -m flask run     
+(for other termials)        
 > $ export FLASK_APP=hello.py    
 $ flask run    
 
