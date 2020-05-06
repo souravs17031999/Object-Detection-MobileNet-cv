@@ -129,6 +129,6 @@ optional arguments:
 > Note : All images and videos are from Google images and Youtube and copyrights are reserved with their respective owners.
 
 ## Future Scope :    
-* As of now, i have only describe and made use of AWS S3 for storage but i will be deploying complete WebAPP on AWS using Elastic Beanstalk using EC2 instances.      
+* As of now, i have only described and made use of AWS S3 for storage but i will be deploying complete WebAPP on AWS using Elastic Beanstalk using EC2 instances.      
 Maybe you can help me out !   
 
