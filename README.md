@@ -130,5 +130,7 @@ optional arguments:
 
 ## Future Scope :    
 * As of now, i have only described and made use of AWS S3 for storage but i will be deploying complete WebAPP on AWS using Elastic Beanstalk using EC2 instances.      
-Maybe you can help me out !   
+Maybe you can help me out !      
+
+⭐️ this Project if you liked it !
 
