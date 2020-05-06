@@ -113,7 +113,7 @@ optional arguments:
   -v  :  debug output to print all items detected    
   
 # Sample runs with outputs
-![flask1](/img/flask1.JPG)   
+![flask1](/img/output/output_final.JPG)   
 ![flask3](/img/flask3.JPG)    
 ![output1](/img/output/output1.JPG)    
 ![output2](/img/output/output2.JPG)   
