@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <title>Object Detection App</title>
+  <style>
+  /*  nav bar starts */
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #ed561a;
+    }
+  /*  nav bar finished */
+    h1{font-family: 'IBM Plex Mono', monospace;
+    text-align: center;}
+     input[type=submit]{
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px 4px 80px;
+      cursor: pointer;
+    }
+    input[type=file]{
+    background-color: #8a8a5c;
+      border: none;
+      color: white;
+      padding: 8px 8px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #fc7419;
+       color: white;
+       text-align: center;
+    }
+
+    @keyframes myanime{
+    	 0%	{background-color: #68ed83;}
+        25%  {background-color: #cdf59d;}
+        50%  {background-color: #e8ed4e;}
+        100% {background-color: #affae8;}
+    }
+
+    .new{animation-name:myanime;
+    	width:auto;
+    	height:auto;
+    	animation-duration:4s;
+    	animation-iteration-count:infinite;
+    }
+
+    @media only screen and (max-width: 768px) {
+    h2 {text-align: center;}
+     input[type=submit]{
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 0 auto
+    }
+    input[type=file]{
+    background-color: #8a8a5c;
+      border: none;
+      color: white;
+      padding: 8px 8px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .upload{
+      text-align: center;
+    }
+    .submit{
+      text-align: center;
+    }
+    .drop-down{
+      text-align: center;
+    }
+    label{
+      margin: 0 auto
+    }
+    }
+  </style>
+</head>
+<body background="/static/1.jpg">
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+  </ul>
+  <div class="container">
+    <br><br><br><br>
+    <div class = "row">
+      <div class = "new">
+        <h1>WELCOME TO OBJECT DETECTION  - DETECTCV</h1>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+    <div class="col-sm-4">
+      <h2>Upload the image</h2>
+  	<form method="POST" enctype=multipart/form-data>
+      <!-- upload part starts-->
+      <div class = "upload">
+  		  <input type="file" name="file">
+      </div>
+      <!-- upload part completes-->
+      <br>
+      <div class = "drop-down">
+      <label for="object">Choose a Object:</label>
+        <select id="object" name="object">
+          <option value="background">background</option>
+          <option value="aeroplane">aeroplane</option>
+          <option value="bicycle">bicycle</option>
+          <option value="bird">bird</option>
+          <option value="boat">boat</option>
+          <option value="bottle">bottle</option>
+          <option value="bus">bus</option>
+          <option value="car">car</option>
+          <option value="cat">cat</option>
+          <option value="chair">chair</option>
+          <option value="cow">cow</option>
+          <option value="diningtable">diningtable</option>
+          <option value="dog">dog</option>
+          <option value="horse">horse</option>
+          <option value="motorbike">motorbike</option>
+          <option value="person">person</option>
+          <option value="pottedplant">pottedplant</option>
+          <option value="sheep">sheep</option>
+          <option value="sofa">sofa</option>
+          <option value="train">train</option>
+          <option value="tvmonitor">tvmonitor</option>
+        </select>
+      </div>
+        <br>
+      <div class = "submit">
+  		  <input type="submit" value="Detect" class="btn btn-primary">
+      </div>
+  	</form>
+    </div>
+  </div>
+
+  </div>
+
+<div class="footer">
+  <p>MADE BY SOURAV KUMAR</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Object Detection App</title></head>
+  <style>
+  /*  nav bar starts */
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #ed561a;
+    }
+  /*  nav bar finished */
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #fc7419;
+       color: white;
+       text-align: center;
+    }
+    h2 {text-align: center;}
+    img{
+    display: inline-block;}
+    table{
+      display: inline-block;
+    }
+    .image-container{
+      text-align: center;
+    }
+    .table-container{
+      text-align: center;
+    }
+
+    th:tr{
+        color: blue;
+
+    }
+    tr:nth-of-type(2n){
+        border: 1px solid black;
+        background-color: rgba(150, 150, 150, 0.5);
+
+    }
+
+    td{
+        padding: 8px 8px;
+        border: 1px solid black;
+    }
+    @media only screen and (max-width: 768px) {
+
+    h2 {text-align: center;}
+
+    }
+  </style>
+<body background="/static/1.jpg">
+  <ul>
+    <li><a class="active" href="/object">Home</a></li>
+  </ul>
+  <div class="container">
+      <br>
+      <h2>Detected object(s) with Bounding box : Total {{ len }}</h2>
+      <br>
+      <div class="row">
+        <div class = "table-container">
+          <table style="margin-left: 20px;">
+          <!-- Table headers -->
+              <th>
+                  <tr style="color: green; ">
+                    <td>Serial Number</td>
+                    <td>startX</td>
+                    <td>startY</td>
+                    <td>endX</td>
+                    <td>endY</td>
+                  </tr>
+              </th>
+
+              <!-- For loop logic of jinja template -->
+              {%for i in range(0, len)%}
+
+              <!-- table rows -->
+              <tr>
+                <td>{{i}}</td>
+                <td>{{detected_items[i][0]}}</td>
+                <td>{{detected_items[i][1]}}</td>
+                <td>{{detected_items[i][2]}}</td>
+                <td>{{detected_items[i][3]}}</td>
+                {%endfor%}
+
+              </tr>
+
+          </table>
+      </div>
+      </div>
+      <br><br>
+  <div class="row">
+
+    <div class = "image-container">
+  	   <img src="https://{{ bucket_name }}.s3.ap-south-1.amazonaws.com/{{ image_name }}">
+    </div>
+  </div>
+  </div>
+
+<div class="footer">
+  <p>MADE BY SOURAV KUMAR</p>
+</div>
+
+</body>
+</html>

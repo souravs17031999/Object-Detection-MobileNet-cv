@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <title>Object Detection App</title>
+
+  <style>
+  /*  nav bar starts */
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #ed561a;
+    }
+  /*  nav bar finished */
+    h1{font-family: 'Amatic SC', cursive;
+    text-align: center;}
+    h3{text-align: center;}
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #fc7419;
+       color: white;
+       text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
+      h1{font-family: 'Amatic SC', cursive;
+      text-align: center;}
+      h3{text-align: center;}
+    }
+  </style>
+</head>
+<body background="/static/1.jpg">
+  <ul>
+    <li><a class="active" href="/object">Home</a></li>
+  </ul>
+  <div class="container">
+    <br><br><br><br>
+    <div class = "row">
+      <h1 style="font-size:15vw;">ERROR : 4 0 4</h1>
+    </div>
+    <div class = "row">
+      <h3>{{ message }}</h3>
+    </div>
+  </div>
+<div class="footer">
+  <p>MADE BY SOURAV KUMAR</p>
+</div>
+
+</body>
+</html>

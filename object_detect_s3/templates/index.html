@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <title>SOURAV KUMAR PROJECTS</title></head>
+  <style>
+  /*  nav bar starts */
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #ed561a;
+    }
+  /*  nav bar finished */
+
+      button {
+      border-radius: 4px;
+      background-color:#ffa557;
+      border: none;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+    }
+
+
+    button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    button span:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    button:hover span {
+      padding-right: 25px;
+    }
+
+    button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+        .sub-main{
+      width: 30%;
+      margin:22px;
+      float: left;
+    }
+
+
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #fc7419;
+       color: white;
+       text-align: center;
+    }
+    h2 {text-align: center;
+      font-family: 'Capriola', sans-serif; }
+
+    form{
+      display: inline-block;
+    }
+    .object-btn-container{
+      text-align: center;
+    }
+    .edge-btn-container{
+      text-align: center;
+    }
+    .flair-btn-container{
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+
+    }
+  </style>
+<body background="/static/1.jpg">
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+  </ul>
+  <div class="container">
+
+
+      <br>
+      <h2>WELCOME TO WORLD OF AI</h2>
+      <br><br><br>
+
+      <div class = 'object-btn-container'>
+        <form action="/object">
+          <div class = "sub-main">
+          <button id="objectbtn" type="submit">Object Detection</button>
+        </div>
+        </form>
+      </div>
+      <br><br>
+
+    <br><br>
+  </div>
+
+<div class="footer">
+  <p>MADE BY SOURAV KUMAR</p>
+</div>
+
+</body>
+</html>
