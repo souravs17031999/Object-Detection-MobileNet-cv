@@ -57,8 +57,13 @@ git clone https://github.com/souravs17031999/Object-Detection-MobileNet-cv
 * This solution is for scenario if you are considering to Scale the Webapp in terms of storage capacity as PythonAnywhere.com doesn't have scalability anywhere near as we have on AWS S3 but there is a workaround which can be helpful (similar to script automation trying to remove the files on the disk and saving space on a daily basis, weekly basis based on the traffic on your website).       
 
 * Now, If you want to configure AWS S3 for your Use , [check this repo]() by me which gives detailed explanation for the same.    
+* After getting credentials, put your credentials in the script named ```flask_app.py``` in the dir named ```object_detect_s3```.   
+* The only change is to be made on the two lines 18 and 19:      
 
-* Let's now run the project locally on your system :     
+> client = boto3.client('s3', aws_access_key_id='############', aws_secret_access_key='############')     
+> bucket_name = '###########'       
+
+* Let's now run the project locally on your system :        
 * Run the cmd (terminal).     
 * Download the project files using following command in the directory from where you need to run the script :       
 ```  
