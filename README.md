@@ -2,6 +2,14 @@
 
 # Project Objective: 
 Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image.    
+So, we are going to draw the bounding boxes of the defined labels with detected objects and also return their coordinates.    
+This type of system can be very useful in such possible scenarios and can be integrated into the current tech stack :    
+
+* Intrusion detection / Anti-theft surveillance systems   
+* Maintaining safe distance between people during the pandemic times (COVID-19)
+* Detecting face masks on people     
+* Assiting traffic management tasks etc..    
+
 
 # Approach :   
 * Pre-trained ```MobileNet + SSD``` run from command line (terminal).
