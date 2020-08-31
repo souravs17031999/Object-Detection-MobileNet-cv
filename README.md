@@ -27,6 +27,11 @@ This type of system can be very useful in such possible scenarios and can be int
 ![conv1](/img/conv2.gif)         
 * Resnet-152 uses residual connections, The core idea exploited in these models, residual connections, is found to greatly improve gradient flow, thus allowing training of much deeper models with tens or even hundreds of layers.       
 
+>Final architechture 
+![final1](/img/final1.JPG)
+![final2](/img/final2.JPG)
+
+
 * Object detection in the browser using ```tensorflow.js``` [TODO - Currently in progress]  
 
 
