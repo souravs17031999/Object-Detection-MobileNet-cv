@@ -141,7 +141,8 @@ optional arguments:
      
 > Note : All images and videos are from Google images and Youtube and copyrights are reserved with their respective owners.
 
-## Future Scope :    
+## Future Scope :     
+* Add a URL input box : Currently, we only have choose photo option which pops up dialog box and then you can select photo from your local device but is it really necessary ? No why you should download the photo if you just share the public URL , then we can do it for you.     
 * As of now, i have only described and made use of AWS S3 for storage but i will be deploying complete WebAPP on AWS using Elastic Beanstalk using EC2 instances.      
 Maybe you can help me out !      
 
