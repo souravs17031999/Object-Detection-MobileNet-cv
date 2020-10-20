@@ -23,8 +23,10 @@ This type of system can be very useful in such possible scenarios and can be int
    
 
 >Final architechture 
-![final1](/img/overview.JPG)
-![final2](/img/final2.JPG)
+![final1](/img/overview.JPG)   
+![final2](/img/final2.JPG)    
+MobileNet    
+![mobilenet](/img/mobilenet.JPG)     
 
 
 * Object detection in the browser using ```tensorflow.js``` [TODO - Currently in progress]  
