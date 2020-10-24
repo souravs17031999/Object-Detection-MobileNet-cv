@@ -13,7 +13,7 @@ This type of system can be very useful in such possible scenarios and can be int
 * Very effective for enforcing Social Distancing rules during this pandemic around the world especially in crowded areas.    
 
 For ex. One such usecase :  
-The solution is highly effective in ecommerce warehouses where social distancin during this COVID-19 pandemic is very necessary to ensure no one in the warehouse is sick as warehouse is the backbone of the industry and there is also a need of trust between customers who buy from these ecommerce websites, and if done properly it can build confidence among the consumers and company can get competitive advantage over others if system is implemented properly.       
+>The solution is highly effective in ecommerce warehouses where social distancin during this COVID-19 pandemic is very necessary to ensure no one in the warehouse is sick as >warehouse is the backbone of the industry and there is also a need of trust between customers who buy from these ecommerce websites, and if done properly it can build >confidence among the consumers and company can get competitive advantage over others if system is implemented properly.       
 
 ![warehouseaproach](/img/warehouse.gif)      
 
