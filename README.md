@@ -1,6 +1,7 @@
 # Object-Detection-MobileNet-cv
 
-# Project Objective: 
+# Project Objective:   
+
 Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image.    
 So, we are going to draw the bounding boxes of the defined labels with detected objects and also return their coordinates.    
 This type of system can be very useful in such possible scenarios and can be integrated into the current tech stack :    
@@ -8,7 +9,13 @@ This type of system can be very useful in such possible scenarios and can be int
 * Intrusion detection / Anti-theft surveillance systems   
 * Maintaining safe distance between people during the pandemic times (COVID-19)
 * Detecting face masks on people     
-* Assiting traffic management tasks etc..    
+* Assiting traffic management tasks etc..      
+* Very effective for enforcing Social Distancing rules during this pandemic around the world especially in crowded areas.    
+
+For ex. One such usecase :  
+The solution is highly effective in ecommerce warehouses where social distancin during this COVID-19 pandemic is very necessary to ensure no one in the warehouse is sick as warehouse is the backbone of the industry and there is also a need of trust between customers who buy from these ecommerce websites, and if done properly it can build confidence among the consumers and company can get competitive advantage over others if system is implemented properly.       
+
+![warehouseaproach](/img/warehouse.gif)      
 
 
 # Approach :   
@@ -29,7 +36,7 @@ MobileNet
 ![mobilenet](/img/mobilenet.JPG)     
 
 
-* Object detection in the browser using ```tensorflow.js``` [TODO - Currently in progress]  
+* Object detection in the browser using ```tensorflow.js/ml5.js``` [TODO - Currently in progress]  
 
 
 ### Real time Flask server hosted :      
