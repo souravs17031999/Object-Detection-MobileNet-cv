@@ -7,7 +7,7 @@ Flask-RESTful==0.3.7
 flask-session==0.3.1
 Flask-SocketIO==3.0.1
 Flask-SQLAlchemy==2.3.2
-Jinja2==2.10.1
+Jinja2==2.11.3
 numpy==1.16.4
 opencv-python==4.1.0.25
 Pillow>=7.1.0
