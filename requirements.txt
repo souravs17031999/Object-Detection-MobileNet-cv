@@ -9,6 +9,6 @@ Flask-SocketIO==3.0.1
 Flask-SQLAlchemy==2.3.2
 Jinja2==2.10.1
 numpy==1.16.4
-opencv-python==4.1.0.25
+opencv-python==4.1.1.26
 Pillow>=7.1.0
 Werkzeug==0.16.0
